@@ -2,24 +2,53 @@
 <html>
     <link href="app.css" rel="stylesheet" />
 
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+
     <body>
-        <ul>
-            <li><a class="active" href="https://dashct.github.io/app.css">CSS</a></li>
-            <li><a class="active" href="https://dashct.github.io/app.js">JS</a></li>
+        <ul class="index">
+            <li class="ii"><a class="active" href="https://dashct.github.io/app.css">CSS</a></li>
+            <li class="ii"><a class="active" href="https://dashct.github.io/app.js">JS</a></li>
         </ul>
 
         <h1>dct world</h1>
         <p>welcome to dct world</p>
-        <img src="image.png" />
-        <br>
+        <center><a href="good_one.gif">good one</a></center>
+        <br><img src="image.png" /><br>
 
         <button class="space" onClick="joinClub()">click to join the DCT fanclub</button>
         <br>
 
         <iframe width="560" height="315" src="https://www.youtube.com/embed/t8aGgSbtoJE?si=NZSftYaVQC0hP8EZ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-        <br>
-        <center><a href="good_one.gif">good one</a></center>
+        <center><button style="margin-top: 15cm;" class="space" onClick="addEnemy()">add enemy</button></center>
+        <div class="row">
+            <div class="column">
+                <center>
+                    <h3>Partners</h3>
+                    <ul class="no-bullets" style="font-size:medium;">
+                        <li>angus graham</li>
+                        <li>callum leech</li>
+                        <li>lewis harding</li>
+                        <li>jacob hope</li>
+                    </ul>
+                </center>
+            </div>
+            <div class="column">
+                <center>
+                    <h3>Enemies</h3>
+                    <ul class="no-bullets" id="enemies" style="font-size:medium;">
+                        <li>harry jenko</li>
+                        <li>emlyn pheonix</li>
+                        <li>fin barnes</li>
+                        <li>harry jenko</li>
+                        <li>harry jenko</li>
+                    </ul>
+                </center>
+            </div>
+            </div>
+          </div>
     </body>
 
     <script src="app.js"></script>

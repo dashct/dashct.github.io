@@ -1,4 +1,4 @@
-h1 {
+h1, h3 {
     color: blue;
 }
 
@@ -8,7 +8,13 @@ body {
     font-size: xx-large;
 }
 
-ul {
+ul.no-bullets {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+
+ul.index {
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -16,11 +22,11 @@ ul {
     background-color: firebrick;
 }
   
-li {
+li.ii {
     float: left;
 }
   
-li a {
+li.ii a {
     display: block;
     color: white;
     text-align: center;
@@ -28,7 +34,7 @@ li a {
     text-decoration: none;
 }
   
-li a:hover {
+li.ii a:hover {
     background-color: palevioletred;
 }
 
@@ -55,4 +61,20 @@ div.gallery img {
 div.desc {
     padding: 15px;
     text-align: center;
+}
+
+.column {
+    float: left;
+    width: 50%;
+    padding: 10px;
+  }
+  
+.row:after {
+content: "";
+display: table;
+clear: both;
+}
+
+* {
+    box-sizing: border-box;
 }
